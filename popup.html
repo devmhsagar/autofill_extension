@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Saver</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      h1 {
+        font-size: 18px;
+      }
+      select,
+      button {
+        margin: 5px 0;
+        padding: 5px;
+        font-size: 14px;
+      }
+      .container {
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Manage Forms</h1>
+      <label for="formNamesDropdown">Choose Form:</label>
+      <select id="formNamesDropdown">
+        <option value="unfilled">unfilled</option>
+      </select>
+      <br />
+      <button id="addNew">Add New Form</button>
+      <br />
+      <button id="saveForm">Save Form Data</button>
+      <br />
+      <button id="fillForm">Autofill Form</button>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

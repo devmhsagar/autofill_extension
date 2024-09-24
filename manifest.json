@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Advanced Form Saver",
+  "version": "3.3",
+  "description": "Save and manage form profiles with autofill functionality.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
